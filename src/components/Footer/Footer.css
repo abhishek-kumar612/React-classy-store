@@ -1,0 +1,207 @@
+footer{
+    background: #2d3436;
+    padding: 50px 0;
+}
+footer .socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+footer .socialmedia .icons{
+    display: block;
+    color: black;
+    cursor: pointer;
+    /* outline: 1px solid white; */
+    background: ghostwhite;
+    margin: 0 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: calc(2.2rem + 25px);
+    transition: .2s ease-in-out;
+}
+footer .socialmedia .icons:hover{
+    background: var(--clr);
+    color: ghostwhite;
+    transform: scale(1.1);
+}
+footer .footermain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+footer .footermain .footer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px 0;
+    /* outline: 1px solid red; */
+}
+footer .footermain .footer h1{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: monospace;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+footer .footermain .footer a{
+    display: block;
+    color: ghostwhite;
+    /* outline: 1px solid black; */
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    transition: .2s ease-in-out;
+}
+footer .footermain .footer p{
+    color: ghostwhite;
+    font-family: monospace;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+footer .footermain .footer p span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: .8rem;
+    opacity: .7;
+}
+footer .footermain .footer .call{
+    color: ghostwhite;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .footermain .footer a:hover{
+    color: var(--color);
+}
+footer .footermain .footer input[type = "email"]{
+    width: 300px;
+    height: 40px;
+    font-size: 1.1rem;
+    background: transparent;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    font-family: monospace;
+    border-bottom: 3px solid var(--color);
+}
+footer .footermain .footer input[type = "submit"]{
+    font-size: 1.1rem;
+    width: 60%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: monospace;
+    padding: 10px 0;
+    color: ghostwhite;
+    background: var(--color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: .2s ease-in-out;
+}
+footer .footermain .footer input[type = "submit"]:hover{
+    background: ghostwhite;
+    color: var(--color);
+}
+footer .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+footer .cards img{
+    margin: 0 5px;
+}
+footer .copyright{
+    text-align: center;
+    margin-top: 30px;
+    color: ghostwhite;
+    font-size: 1rem;
+    font-family: monospace;
+}
+.newsletter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 50px;
+    background: #F79F1F;
+}
+.newsletter .emailupdates h1{
+    font-size: 1.8rem;
+    font-family: monospace;
+    margin: 5px 0;
+    color: ghostwhite;
+}
+.newsletter .emailupdates p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: ghostwhite;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.newsletter .emailupdates p span{
+    color: #2d3436;
+    font-size: 1.2rem;
+}
+.newsletter .signupinput{
+    width: 35%;
+    height: 60px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.newsletter .signupinput input[type = "email"]{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 1.2rem;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.newsletter .signupinput input[type = "submit"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: var(--color);
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: ghostwhite;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.newsletter .signupinput input[type = "submit"]:hover{
+    background: #2d3436;
+}
+@media (max-width: 780px){
+    .newsletter{
+        flex-direction: column;
+    } 
+    .newsletter .signupinput{
+        width: 70%;
+        height: 50px;
+        margin: 10px 0;
+    }
+    .newsletter .signupinput input[type = "submit"]{
+        width: 100px;
+    }
+    .footer .socialmedia{
+        flex-direction: column;
+    }
+    footer .footermain{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    footer .footermain .footer{
+        width: 100%;
+        text-align: center;
+    }
+}

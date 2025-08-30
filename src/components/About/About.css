@@ -1,0 +1,69 @@
+.aboutus{
+    width: 100%;
+    height: 300px;
+    background: url('../images/aboutuspage2.jpg') no-repeat  center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.aboutuspage{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5rem 0;
+}
+.aboutuspage .img{
+    width: 35%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px 0 0 0;
+    margin: 0 20px;
+    box-shadow: 1.2rem 1.2rem 0 var(--color);
+}
+.aboutuspage .img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+.aboutuspage .img img:hover{
+    transform: scale(1.2) rotate(10deg);
+}
+.aboutuspage p{
+    width: 35%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0 1.5rem;
+    text-align: justify;
+}
+
+@media (max-width: 780px){
+    .aboutus{
+        height: 250px;
+    }
+    .aboutuspage .img{
+        height: 300px;
+    }
+}
+@media (max-width: 600px){
+    .aboutus{
+        height: 200px;
+    }
+    .aboutuspage{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutuspage .img{
+        width: 80%;
+        height: 250px;
+    }
+    .aboutuspage p{
+        width: 80%;
+        margin: 2rem 1.5rem;
+    }
+}
+@media (max-width: 480px){
+    .aboutus{
+        height: 150px;
+    }
+}

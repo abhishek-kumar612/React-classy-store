@@ -1,0 +1,79 @@
+.categoriesMain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+.categoriesMain .categories{
+    width: 400px;
+    height: 300px;
+    /* outline: 1px solid black; */
+    margin: .8rem;
+    border-radius: 2rem 0;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s ease-in-out;
+}
+.categoriesMain .categories.categoriesActive{
+    transform: scale(1);
+    opacity: 1;
+}
+.categoriesMain .categories img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: contain;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+.categoriesMain .categories:hover img{
+    transform: scale(1.2);
+}
+.categoriesMain .categories h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+.categoriesMain .categories .buybtn{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    background: var(--color);
+    color: ghostwhite;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+.categoriesMain .categories:hover .buybtn{
+    opacity: 1;
+    visibility: visible;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.categoriesMain .categories .buybtn:hover{
+    background: #2d3436;
+}
+.categoriesMain .categories:hover{
+    background: #70a1ff;
+}
+
+@media (max-width: 490px){
+    .categoriesMain .categories{
+      max-width: 90%;
+      height: 270px;
+      margin: 10px 0;
+    }
+  }

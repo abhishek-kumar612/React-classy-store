@@ -1,0 +1,38 @@
+.productsheader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ghostwhite;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: .8rem 0;
+    position: sticky;
+    top: 3.5rem;
+    left: 0;
+    z-index: 999999;
+}
+.productsheader a{
+    display: block;
+    color: black;
+    padding: .4rem .5rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+    transition: .2s ease-in-out;
+}
+.productsheader a.active{
+    background: var(--color);
+    color: ghostwhite;
+}
+.productsheader a:hover{
+    background: var(--color);
+    color: ghostwhite;
+}
+
+@media (max-width: 780px){
+    .productsheader{
+        position: fixed;
+        top: 5.5rem;
+    }
+}

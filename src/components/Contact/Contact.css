@@ -1,0 +1,119 @@
+.contactus{
+    width: 100%;
+    height: 28rem;
+    z-index: -1;
+    /* margin-top: -80px; */
+    position: relative;
+}
+.contactus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.contactus h1{
+    position: absolute;
+    left: 3%;
+    top: 35%;
+    color: ghostwhite;
+    font-size: 1.6rem;
+    font-family: monospace;
+    font-weight: bolder;
+}
+.contactpage{
+    width: 750px;
+    margin: auto;
+    margin-top: -10rem;
+    margin-bottom: 2.5rem;
+    background: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 0 50px; */
+    padding: 2rem 2.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    position: relative;
+}
+.contactpage::before{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 20%;
+    background: ghostwhite;
+    transform: skewX(-30deg);
+    left: -2.1rem;
+    top: 0;
+    pointer-events: none;
+    z-index: -1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.contactpage::after{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 20%;
+    background: ghostwhite;
+    transform: skewX(-30deg);
+    right: -2.1rem;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, .2);
+}
+.contactpage li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    margin: .5rem 0;
+}
+.contactpage li input[type = "text"], .contactpage li input[type = "email"]{
+    width: 70%;
+    height: 2.2rem;
+    font-size: 1.3rem;
+    font-family: monospace;
+    color: black;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid var(--color);
+}
+.contactpage textarea{
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border: 3px solid var(--color);
+}
+.contactpage li:nth-child(3){
+    align-items: flex-start;
+}
+.contactpage input[type = "submit"]{
+    width: 6rem;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+    background: var(--color);
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    color: ghostwhite;
+    border-radius: .5rem;
+    font-family: monospace;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+.contactpage input[type = "submit"]:hover{
+    box-shadow: 0 0 10px var(--color), 0 0 20px var(--color);
+    transform: scale(1.1);
+}
+@media (max-width: 980px){
+    .contactpage{
+        width: 600px;
+    }
+}
+@media (max-width: 780px){
+    .contactpage{
+        width: 70%;
+    }
+}

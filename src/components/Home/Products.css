@@ -1,0 +1,218 @@
+.productsHeading{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: monospace;
+}
+.appvideoheading{
+    text-align: center;
+    margin-top: 2rem;
+    padding: .5rem 0;
+    font-size: 2.3rem;
+    font-family: monospace;
+}
+.appvideoheading span{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.appvideo{
+    margin: 2.2rem auto;
+    width: 100%;
+    height: 700px;
+}
+.appvideo video{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem 0;
+    object-fit: contain;
+}
+.websiteinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.websiteinfo .info{
+    width: 220px;
+    margin: .5rem;
+    outline: 1px solid lightgray;
+    padding: 1.2rem;
+    background: ghostwhite;
+    border-radius: 1rem 0;
+    cursor: default;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.websiteinfo .info img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+.websiteinfo .info p{
+    text-align: center;
+    padding: .5rem 0;
+    font-size: 1rem;
+    font-family: monospace;
+    background: var(--color);
+    border-radius: 0 10px;
+    color: ghostwhite;
+}
+.accessoriesoffers{
+    width: 100%;
+    height: 400px;
+    margin: 2.2rem 0;
+    position: relative;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+.accessoriesoffers.accessoriesbannerActive{
+    opacity: 1;
+    transform: scaleX(1);
+}
+.accessoriesoffers img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.accessoriesoffers h1{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    font-family: monospace;
+    color: ghostwhite;
+    font-size: 3rem;
+}
+.accessoriesoffers a{
+    display: inline-block;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: ghostwhite;
+    background: var(--color);
+    transition: .2s ease-in-out;
+}
+.accessoriesoffers a:hover{
+    background: ghostwhite;
+    color: #2d3436;
+}
+.homeGrid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+.homeGrid .grid{
+    width: 680px;
+    height: 400px;
+    margin: .5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+}
+.homeGrid .grid img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+.homeGrid .grid:hover img{
+    transform: scale(1.1);
+}
+.homeGrid .grid .links{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.homeGrid .grid .links h1{
+    font-size: 2rem;
+    color: black;
+    padding: .5rem 0;
+    font-family: monospace;
+}
+.homeGrid .grid .links p{
+    color: black;
+    font-size: 1rem;
+    padding: .2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homeGrid .grid .links a{
+    display: inline-block;
+    color: ghostwhite;
+    padding: .2rem .9rem;
+    font-size: 1.7rem;
+    background: var(--color);
+    border-radius: 10px;
+    font-family: monospace;
+    margin-top: .8rem;
+    transition: .2s ease-in-out;
+}
+.homeGrid .grid .links a:hover{
+    background: #2d3436;
+    color: ghostwhite;
+    transform: scale(1.2);
+}
+
+@media (max-width: 780px){
+    .appvideo{
+        height: 500px;
+    }
+    .accessoriesoffers{
+        height: 300px
+    }
+    .homeGrid .grid{
+        width: 500px;
+        height: 300px;
+    }
+    .websiteinfo .info{
+        width: 180px;
+        padding: 18px;
+    }
+}
+@media (max-width: 490px){
+    .appvideo{
+        height: 500px;
+    }
+    .accessoriesoffers{
+        height: 300px
+    }
+    .homeGrid .grid{
+        width: 90%;
+        height: 300px;
+    }
+    .websiteinfo .info{
+        width: 60%;
+        padding: 18px;
+    }
+}
+@media (max-width: 400px){
+    .appvideo{
+        height: 400px;
+    }
+    .accessoriesoffers{
+        height: 250px
+    }
+    .homeGrid .grid{
+        width: 90%;
+        height: 250px;
+    }
+    .websiteinfo .info{
+        width: 60%;
+        padding: 15px;
+    }
+}

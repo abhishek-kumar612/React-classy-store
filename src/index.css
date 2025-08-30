@@ -1,13 +1,82 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html{
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+body {
+  background: #ecf0f1;
+}
+:root{
+  --color: #047BD5;
+}
+::selection{
+  background: var(--color);
+  color: ghostwhite;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background: #f5f6fa;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: var(--color);
+}
+.loadingscreen{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loadingscreen span{
+  font-size: 3rem;
+  font-family: monospace;
+  padding: 1rem 0;
+}
+.loadingscreen .loading{
+  width: 10rem;
+  height: 10rem;
+  background: transparent;
+  border-radius: 50%;
+  border: 1rem solid var(--color);
+  border-bottom-color: transparent;
+  animation: loading1 .4s infinite linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes loading1{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 980px){
+  html{
+    font-size: 17px;
+  }
+}
+@media (max-width: 780px){
+  html{
+    font-size: 15px;
+  }
+}
+@media (max-width: 490px){
+  html{
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px){
+  html{
+    font-size: 11px;
+  }
 }
